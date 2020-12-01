@@ -7,7 +7,7 @@ RUN dotnet --version
 # Copiar csproj e restaurar dependencias
 COPY *.csproj ./
 RUN dotnet restore
-
+ 
 # Build da aplicacao
 COPY . ./
 RUN dotnet publish -c Release -o out
